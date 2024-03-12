@@ -28,6 +28,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
+  -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
   position: sticky;
   top: 0;
