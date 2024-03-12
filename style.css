@@ -97,7 +97,6 @@ main {
 .presentation {
   display: flex;
   flex-direction: column;
-  gap: 36px;
 }
 
 .pres-wrap {
@@ -159,10 +158,24 @@ main {
 }
 
 .qna-separator {
-  width: 85%;
-  background-color: #acacac;
+  width: 100%;
+  background-color: #d4d4d4;
   height: 4px;
   border-radius: 8px;
   margin: 0 auto;
   margin-top: 12px;
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .about-container {
+    width: 100%;
+    &:nth-child(2n),
+    &:nth-child(2n + 1) {
+      transform: none;
+    }
+  }
 }
